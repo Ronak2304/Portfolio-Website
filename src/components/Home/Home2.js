@@ -13,38 +13,45 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
+              I am a recent Computer Science graduate who enjoys combining
+              <b className="purple">
+                {" "}
+                creativity, marketing, and analytics
+              </b>
+              to solve real-world business challenges.
               <br />
               <br />
-              I’m proficient in
+              Over the past few years, I have worked on marketing campaigns,
+              event promotions, graphic design projects, and data analytics
+              initiatives that helped drive audience engagement and measurable
+              outcomes.
+              <br />
+              <br />
+              My toolkit includes
               <i>
                 <b className="purple">
                   {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
+                  Excel, Power BI, SQL, Python, Canva, Figma,
+                  and Full-Stack Web Development
                 </b>
               </i>
-              — and I enjoy working across both backend and frontend stacks.
+              , allowing me to approach problems from both a creative and analytical
+              perspective.
               <br />
               <br />
-              My key areas of interest include developing
-              <i>
-                <b className="purple">
-                  {" "}
-                  Web Applications, Blockchain Solutions,{" "}
-                </b>
-              </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
+              From generating registrations for national-level campaigns to
+              creating digital marketing assets and leading promotional efforts
+              for large college events, I enjoy building initiatives that create
+              impact and deliver results.
               <br />
               <br />
-              Whenever possible, I love building projects with
-              <b className="purple"> Node.js </b> and modern frameworks like{" "}
-              <i>
-                <b className="purple">React.js</b> and{" "}
-                <b className="purple">Next.js</b>.
-              </i>
+              I am actively exploring opportunities in
+              <b className="purple">
+                {" "}
+                Social Media Marketing, Digital Marketing,
+                Campaign Strategy, Content Marketing,
+                and Marketing Analytics.
+              </b>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
