@@ -16,9 +16,9 @@ function Home2() {
               I am a recent Computer Science graduate who enjoys combining
               <b className="purple">
                 {" "}
-                creativity, marketing, and analytics
-              </b>
-              to solve real-world business challenges.
+                creativity, marketing, and analytics 
+                {" "}
+              </b>to build impactful campaigns and initiatives.
               <br />
               <br />
               Over the past few years, I have worked on marketing campaigns,
