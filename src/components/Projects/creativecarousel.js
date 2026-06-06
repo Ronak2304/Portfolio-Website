@@ -2,6 +2,7 @@ import frame15 from "../../Assets/Projects/Frame 15.png";
 import frame3 from "../../Assets/Projects/Frame 3 (1).png";
 import group1 from "../../Assets/Projects/Group 1.png";
 import shrek from "../../Assets/Projects/shrek classes (2).png";
+import nike_ad from "../../Assets/Projects/Nike_shoe_ad.jpg";
 
 import { useState } from "react";
 import Modal from "react-bootstrap/Modal";
@@ -61,6 +62,19 @@ function CreativeCarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
+          src={nike_ad}
+          alt=""
+          style={{
+            height: "350px",
+            objectFit: "contain",
+            background: "white",
+          }}
+        />
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
           src={shrek}
           alt=""
           style={{
@@ -101,6 +115,14 @@ function CreativeCarousel() {
           <img
             className="d-block w-100"
             src={group1}
+            alt=""
+          />
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={nike_ad}
             alt=""
           />
         </Carousel.Item>
