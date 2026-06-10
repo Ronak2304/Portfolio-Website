@@ -1,8 +1,9 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import { CgWebsite } from "react-icons/cg";
+import { FaGoogleDrive } from "react-icons/fa";
 
 function ProjectCards(props) {
   return (
@@ -22,8 +23,15 @@ function ProjectCards(props) {
         </Card.Text>
 
         <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
+          {props.ghLink?.includes("drive.google") ? (
+            <>
+              <FaGoogleDrive /> &nbsp; Drive
+            </>
+          ) : (
+            <>
+              <BsGithub /> &nbsp; GitHub
+            </>
+          )}
         </Button>
 
         {!props.isBlog && props.demoLink && (

@@ -1,144 +1,72 @@
-import frame15 from "../../Assets/Projects/Frame 15.png";
-import frame3 from "../../Assets/Projects/Frame 3 (1).png";
-import group1 from "../../Assets/Projects/Group 1.png";
-import shrek from "../../Assets/Projects/shrek classes (2).png";
-import nike_ad from "../../Assets/Projects/Nike_shoe_ad.jpg";
-
 import { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import Carousel from "react-bootstrap/Carousel";
 
+function GenericCarousel({ images }) {
+  const [show, setShow] = useState(false);
 
-function CreativeCarousel() {
-    const [show, setShow] = useState(false);
   return (
     <>
-  <div
-    onClick={() => setShow(true)}
-    style={{
-      cursor: "pointer",
-    }}
-  >
-    <Carousel fade>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={frame15}
-          alt=""
-          style={{
-            height: "350px",
-            objectFit: "contain",
-            background: "white",
-          }}
-        />
-      </Carousel.Item>
+      <div
+        onClick={() => setShow(true)}
+        style={{ cursor: "pointer" }}
+      >
+        <Carousel fade interval={2500}>
+          {images.map((item, index) => (
+            <Carousel.Item key={index}>
+              <img
+                className="d-block w-100"
+                src={item.image}
+                alt=""
+                style={{
+                  height: "350px",
+                  objectFit: "contain",
+                  background: "white",
+                }}
+              />
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </div>
 
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={frame3}
-          alt=""
-          style={{
-            height: "350px",
-            objectFit: "contain",
-            background: "white",
-          }}
-        />
-      </Carousel.Item>
+      <Modal
+        show={show}
+        onHide={() => setShow(false)}
+        centered
+        dialogClassName="creative-modal"
+      >
+        <Modal.Body style={{ padding: 0 }}>
+          <Carousel>
 
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={group1}
-          alt=""
-          style={{
-            height: "350px",
-            objectFit: "contain",
-            background: "white",
-          }}
-        />
-      </Carousel.Item>
+            {images.map((item, index) => (
+              <Carousel.Item key={index}>
+                {item.link ? (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className="d-block w-100"
+                      src={item.image}
+                      alt=""
+                    />
+                  </a>
+                ) : (
+                  <img
+                    className="d-block w-100"
+                    src={item.image}
+                    alt=""
+                  />
+                )}
+              </Carousel.Item>
+            ))}
 
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={nike_ad}
-          alt=""
-          style={{
-            height: "350px",
-            objectFit: "contain",
-            background: "white",
-          }}
-        />
-      </Carousel.Item>
-
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={shrek}
-          alt=""
-          style={{
-            height: "350px",
-            objectFit: "contain",
-            background: "white",
-          }}
-        />
-      </Carousel.Item>
-    </Carousel>
-  </div>
-
-  <Modal
-  show={show}
-  onHide={() => setShow(false)}
-  centered
-  dialogClassName="creative-modal"
-  >
-    <Modal.Body style={{ padding: 0 }}>
-      <Carousel>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={frame15}
-            alt=""
-          />
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={frame3}
-            alt=""
-          />
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={group1}
-            alt=""
-          />
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={nike_ad}
-            alt=""
-          />
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={shrek}
-            alt=""
-          />
-        </Carousel.Item>
-      </Carousel>
-    </Modal.Body>
-  </Modal>
-</>
-)
+          </Carousel>
+        </Modal.Body>
+      </Modal>
+    </>
+  );
 }
 
-export default CreativeCarousel;
+export default GenericCarousel;

@@ -13,44 +13,43 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I am a recent Computer Science graduate who enjoys combining
+              I am a recent Computer Science graduate with a passion for combining
               <b className="purple">
                 {" "}
-                creativity, marketing, and analytics 
-                {" "}
-              </b>to build impactful campaigns and initiatives.
+                analytics, operations, and marketing
+              </b>{" "}
+              to solve real-world problems and drive meaningful outcomes.
               <br />
               <br />
-              Over the past few years, I have worked on marketing campaigns,
-              event promotions, graphic design projects, and data analytics
-              initiatives that helped drive audience engagement and measurable
-              outcomes.
+              Through internships, leadership roles, and hands-on projects, I have
+              worked on large-scale marketing campaigns, data analytics initiatives,
+              operational planning, and process optimization projects that delivered
+              measurable impact.
               <br />
               <br />
               My toolkit includes
               <i>
                 <b className="purple">
                   {" "}
-                  Excel, Power BI, SQL, Python, Canva, Figma,
-                  and Full-Stack Web Development
+                  Excel, Power BI, SQL, Python, Canva, PowerPoint,
+                  MERN Stack, and Data Visualization
                 </b>
               </i>
-              , allowing me to approach problems from both a creative and analytical
-              perspective.
+              , enabling me to approach challenges with both analytical rigor and
+              creative thinking.
               <br />
               <br />
-              From generating registrations for national-level campaigns to
-              creating digital marketing assets and leading promotional efforts
-              for large college events, I enjoy building initiatives that create
-              impact and deliver results.
+              From generating 50,000+ registrations through marketing campaigns and
+              managing participant operations, to building analytics dashboards,
+              conducting research, and leading cross-functional teams, I enjoy
+              turning data and ideas into actionable results.
               <br />
               <br />
-              I am actively exploring opportunities in
+              I am actively seeking opportunities in
               <b className="purple">
                 {" "}
-                Social Media Marketing, Digital Marketing,
-                Campaign Strategy, Content Marketing,
-                and Marketing Analytics.
+                Operations, Business Analytics, Marketing,
+                Strategy, Program Management, and Data-Driven Decision Making.
               </b>
             </p>
           </Col>
