@@ -93,7 +93,7 @@ function Projects() {
               carousel={<GenericCarousel images={excelDashboardImages} />}
               title="Excel Dashboard"
               description="Analyzed 260,000+ ball-by-ball IPL records spanning 2008–2024 using Excel and Power Query. Developed comprehensive player, team, and season-level insights, identifying performance trends, records, and key statistics through advanced Pivot Tables and dashboard visualizations."
-              ghLink="https://drive.google.com/drive/folders/1LutwZbMnkziYe30JYi_olIUHMClnwRCP?usp=sharing"
+              ghLink="https://drive.google.com/drive/folders/1TIarWP1AR6ebOi6UpWTF0zacZonH3bHa"
               sourceType="drive"
             />
           </Col>
