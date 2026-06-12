@@ -31,6 +31,7 @@ function App() {
 
   return (
     <>
+    <Analytics />
     <DragBall />
     <Router>
       <Preloader load={load} />
