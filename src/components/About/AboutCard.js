@@ -13,7 +13,7 @@ function AboutCard() {
             
             <br /><br />
             
-            I am a final-year Computer Science student at <span className="purple">Shaheed Sukhdev College of Business Studies (University of Delhi)</span> with experience spanning data analytics, graph theory research, and stakeholder operations. Through my internships and projects, I have engineered predictive pipelines using 16,000+ scraped records and evaluated complex network structures on datasets exceeding 1.9 million transaction logs, developing a strong foundation in structural thinking, algorithmic benchmarking, and data cleaning.
+            I am a recent Computer Science graduate from <span className="purple">Shaheed Sukhdev College of Business Studies (University of Delhi)</span> with experience spanning data analytics, graph theory research, and stakeholder operations. Through my internships and projects, I have engineered predictive pipelines using 16,000+ scraped records and evaluated complex network structures on datasets exceeding 1.9 million transaction logs, developing a strong foundation in structural thinking, algorithmic benchmarking, and data cleaning.
             
             <br /><br />
             
